@@ -1,0 +1,73 @@
+// Author : Nyanpasuuuuu
+#include<bits/stdc++.h>
+using namespace std;
+#define task "test"
+#define SZ(c) (c).size()
+#define getbit(x,i) (((x) >> (i)) & 1)
+#define turnoff(x,i) (x)&(~(1<<(i)))
+#define __builtin_popcount __builtin_popcountll
+#define all(x) (x).begin(),(x).end()
+#define pb(x) push_back(x)
+#define eb(x) emplace_back(x)
+#define fi first
+#define se second
+#define FOR(i,l,r) for(int i = l ; i <= r ; i++)
+#define FD(i,l,r) for(int i = l ; i >= r ; i--)
+#define REP(i,l,r) for(int i = l ; i <r ; i++)
+
+typedef long long ll ;
+typedef pair<int,int> ii;
+template <class T>
+inline bool minimize(T &a, const T &b) { return (a > b ? (a = b),1 : 0); }
+template <class T>
+inline bool maximize(T &a, const T &b) { return (a < b ? (a = b),1 : 0); }
+
+const int N = 1e6 + 5;
+//const int MOD = 1e9+7;
+//const int base = 311;
+//const int BLOCK = 488;
+//const int INF = 1e9 + 7;
+vector<int>U, V, W;
+void init(void)
+{
+    cin >> n >> m;
+    FOR(i,1,m)
+    {
+        register int x;
+        cin >> x;
+        U.pb(x);
+    }
+    FOR(i,1,m)
+    {
+        register int x;
+        cin >> x;
+        V.pb(x);
+    }
+    FOR(i,1,m)
+    {
+        register int x;
+        cin >> x;
+        W.pb(x);
+    }
+}
+void process(void)
+{
+}
+signed main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);cout.tie(0);
+    if(fopen(task".inp","r"))
+    {
+        freopen(task".inp","r",stdin);
+        freopen(task".out","w",stdout);
+    }
+    int t = 1;
+    //cin >> t;
+    while(t--)
+    {
+        init();
+        process();
+    }
+
+}
